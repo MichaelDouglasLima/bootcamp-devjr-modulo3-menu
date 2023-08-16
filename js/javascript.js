@@ -26,7 +26,7 @@ function calc(){
                                 "Prato: " + pratos[input.id-1].nome +
                                 " - Preço unitário: " + formatter.format(pratos[input.id-1].preco) +
                                 " - Quantidade: " + input.value +
-                                " - Total: " + formatter.format(pratos[input.id-1].preco * input.value) +
+                                " - Total: " + formatter.format(pratos[input.id-1].preco * input.value) + "." +
                                 "</li>";
 
             total += pratos[input.id-1].preco * input.value;
