@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="container-principal">
-        <br>
         <img src="assets/home.jpg" alt="Imagem da Home">
         
         <h1>Menu - Faça A Sua Escolha</h1>
@@ -17,11 +16,10 @@
         <div class="container-secundario">
             <h2>Prato Principal</h2>
             <h3>Todos os pratos acompanham arroz, feijão e a sobremesa do dia</h3>
-            <br>
             <div class="flex-container">
                 <div class="container-prato">
-                    <img src="assets/bife.jpg">
-                    <h3>Bife com Batata</h3>
+                    <img src="assets/bife.jpg" alt="Imagem Bife">
+                    <h4>Bife com Batata</h4>
                     <div class="preco">
                         R$ 30,00
                     </div>
@@ -31,11 +29,11 @@
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
-                    <br>
                 </div>
+                
                 <div class="container-prato">
-                    <img src="assets/coxa.jpg">
-                    <h3>Coxa de Frango Crocante</h3>
+                    <img src="assets/coxa.jpg" alt="Imagem Coxa">
+                    <h4>Coxa de Frango Crocante</h4>
                     <div class="preco">
                         R$ 25,00
                     </div>
@@ -45,11 +43,11 @@
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
-                    <br>
                 </div>
+
                 <div class="container-prato">
-                    <img src="assets/panela.jpg">
-                    <h3>Carne de Panela</h3>
+                    <img src="assets/panela.jpg" alt="Imagem Panela">
+                    <h4>Carne de Panela</h4>
                     <div class="preco">
                         R$ 22,00
                     </div>
@@ -59,19 +57,18 @@
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
-                    <br>
                 </div>
+
             </div>
         </div>
 
         <div class="container-secundario">
             <h2>Acompanhamentos</h2>
             <h3>Porções para uma pessoa</h3>
-
             <div class="flex-container">
                 <div class="container-prato">
-                    <img src="assets/farofa.jpg">
-                    <h3>Farofa</h3>
+                    <img src="assets/farofa.jpg" alt="Imagem Farofa">
+                    <h4>Farofa</h4>
                     <div class="preco">
                         R$ 10,00
                     </div>
@@ -81,11 +78,11 @@
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
-                    <br>
                 </div>
+
                 <div class="container-prato">
-                    <img src="assets/salad.jpg">
-                    <h3>Salada</h3>
+                    <img src="assets/salad.jpg" alt="Imagem Salada">
+                    <h4>Salada</h4>
                     <div class="preco">
                         R$ 8,00
                     </div>                   
@@ -95,11 +92,11 @@
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
-                    <br>
                 </div>
+
                 <div class="container-prato">
-                    <img src="assets/torresmo.jpg">
-                    <h3>Torresmo</h3>
+                    <img src="assets/torresmo.jpg" alt="Imagem Torresmo">
+                    <h4>Torresmo</h4>
                     <div class="preco">
                         R$ 12,00
                     </div>            
@@ -109,8 +106,8 @@
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
-                    <br>
                 </div>
+
             </div>
         </div>
 
@@ -126,7 +123,9 @@
         <button onclick="calc()">Calcular</button>
 
         <div id="pedido" class="pedido">
+
         </div>
+
     </div>
 
     <script src="js/jquery-3.6.0.min.js"> </script>
@@ -137,5 +136,6 @@
     <script>
         $("#phone").mask("(99) 99999-9999");
     </script>
+
 </body>
 </html>

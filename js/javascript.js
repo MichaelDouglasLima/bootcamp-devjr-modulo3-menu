@@ -1,10 +1,5 @@
 function calc(){
 
-    var cliente = document.getElementById("nomeCliente").value;
-    var pedido = document.getElementById("pedido");
-    var quantities = document.getElementsByName("quantity");
-    var total = 0;
-
     var pratos = [
         {id: 1, nome: "Bife com Batata",         preco: 30.00},
         {id: 2, nome: "Coxa de Frango Crocante", preco: 25.00},
@@ -16,7 +11,12 @@ function calc(){
 
     var formatter = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
 
-    pedido.innerHTML = "Caro " + "<strong>" + cliente + "</strong>" + "<br><br><br>" +
+    var cliente = document.getElementById("nomeCliente").value;
+    var pedido = document.getElementById("pedido");
+    var quantities = document.getElementsByName("quantity");
+    var total = 0;
+
+    pedido.innerHTML = "<br>Caro " + "<strong>" + cliente + "</strong>" + "<br><br><br>" +
                     "Seguem os dados do seu pedido." + "<br><br>" +
                     "O seu pedido é:" + "<br><br>";
 
@@ -28,10 +28,10 @@ function calc(){
                                 " - Quantidade: " + input.value +
                                 " - Total: " + formatter.format(pratos[input.id-1].preco * input.value) +
                                 "</li>";
+
             total += pratos[input.id-1].preco * input.value;
         }
     }
 
     pedido.innerHTML += "<br><br><strong style='font-size: larger;'>Preço final " + formatter.format(total) + "</strong>";
-
 }

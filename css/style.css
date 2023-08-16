@@ -22,6 +22,7 @@ input:focus {
 }
 
 button {
+    margin-bottom: 8px;
     border-radius: 4px;
     width: 95%;
     border: none;
@@ -41,6 +42,7 @@ img {
     width: 95%;
     margin-top: 10px;
 }
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -51,6 +53,7 @@ img {
 .container-principal {
     background-color: #FFF;
     margin: auto;
+    padding-top: 24px;
     width: 1200px;
     text-align: center;
     box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.2);
@@ -80,15 +83,27 @@ img {
 }
 
 .preco {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     color: #075E0E;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .pedido {
     text-align: left;
-    padding: 40px;
+    padding-left: 40px;
+    padding-bottom: 32px;
+}
+
+h4 {
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 48px;
 }
 
 h1 {
