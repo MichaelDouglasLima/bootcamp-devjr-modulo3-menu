@@ -22,7 +22,6 @@ input:focus {
 }
 
 button {
-    margin-bottom: 40px;
     border-radius: 4px;
     width: 95%;
     border: none;
@@ -44,14 +43,15 @@ img {
 }
 .flex-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: center;
 }
 
 .container-principal {
     background-color: #FFF;
     margin: auto;
-    width: 1400px;
+    width: 1200px;
     text-align: center;
     box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -79,16 +79,35 @@ img {
     overflow: hidden;
 }
 
-.header-title {
-    font-size: 40px;
-    font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 100px;
-}
-
 .preco {
     font-size: 40px;
     font-weight: 600;
     color: #075E0E;
     margin-bottom: 20px;
 }
+
+.pedido {
+    text-align: left;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+/*
+Resolvi trocar esta <div> por um <h1> Estilizado
+.header-title {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+    <div class="header-title">
+        Menu - Faça A Sua Escolha
+    </div>
+}
+*/
