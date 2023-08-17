@@ -92,6 +92,7 @@ img {
 .pedido {
     text-align: left;
     padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 32px;
 }
 
@@ -111,6 +112,38 @@ h1 {
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1220px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-principal {
+        width: 95%;
+        padding-bottom: 64px;
+    }
+
+    .container-prato {
+        width: 60%;
+    }
+    
+    .pedido {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
 }
 
 /*
